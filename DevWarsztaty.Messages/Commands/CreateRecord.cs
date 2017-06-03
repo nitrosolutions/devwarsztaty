@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DevWarsztaty.Messages.Commands
 {
-    public class CreateRecord
+    public class CreateRecord : ICommand
     {
 		public string Key { get; set; }
 

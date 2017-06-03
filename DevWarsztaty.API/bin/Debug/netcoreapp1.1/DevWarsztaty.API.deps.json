@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v1.1",
-    "signature": "6ea0d9efeb49c2119d758d1a7f964bf1075b7ccb"
+    "signature": "48ee5ae402bbbb1d10ef04aec08f4056746b67c4"
   },
   "compilationOptions": {
     "defines": [
@@ -34,7 +34,8 @@
           "Microsoft.Extensions.Logging.Debug": "1.1.2",
           "Microsoft.NETCore.App": "1.1.2",
           "Microsoft.VisualStudio.Web.BrowserLink": "1.1.2",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "1.1.1"
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "1.1.1",
+          "RawRabbit.vNext": "1.10.3"
         },
         "runtime": {
           "DevWarsztaty.API.dll": {}
@@ -1440,6 +1441,58 @@
         },
         "compile": {
           "lib/netstandard1.3/NuGet.Frameworks.dll": {}
+        }
+      },
+      "rabbitmq.client/4.1.0": {
+        "dependencies": {
+          "System.Collections.Concurrent": "4.3.0",
+          "System.Console": "4.3.0",
+          "System.Diagnostics.Debug": "4.3.0",
+          "System.IO": "4.3.0",
+          "System.Linq": "4.3.0",
+          "System.Net.NameResolution": "4.3.0",
+          "System.Net.Security": "4.3.1",
+          "System.Net.Sockets": "4.3.0",
+          "System.Reflection.Extensions": "4.3.0",
+          "System.Reflection.TypeExtensions": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Text.RegularExpressions": "4.3.0",
+          "System.Threading": "4.3.0",
+          "System.Threading.Thread": "4.3.0",
+          "System.Threading.Timer": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.5/RabbitMQ.Client.dll": {}
+        },
+        "compile": {
+          "lib/netstandard1.5/RabbitMQ.Client.dll": {}
+        }
+      },
+      "rawrabbit/1.10.3": {
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1",
+          "RabbitMQ.Client": "4.1.0"
+        },
+        "runtime": {
+          "lib/netstandard1.5/RawRabbit.dll": {}
+        },
+        "compile": {
+          "lib/netstandard1.5/RawRabbit.dll": {}
+        }
+      },
+      "rawrabbit.vnext/1.10.3": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "1.1.2",
+          "Microsoft.Extensions.Configuration.Binder": "1.1.2",
+          "Microsoft.Extensions.DependencyInjection": "1.1.1",
+          "Microsoft.Extensions.Logging": "1.1.2",
+          "RawRabbit": "1.10.3"
+        },
+        "runtime": {
+          "lib/netstandard1.5/RawRabbit.vNext.dll": {}
+        },
+        "compile": {
+          "lib/netstandard1.5/RawRabbit.vNext.dll": {}
         }
       },
       "remotion.linq/2.1.1": {
@@ -4110,6 +4163,27 @@
       "sha512": "sha512-mj7pCguESABXPe27wleBICqbo1h0nm1bdfQN9GSUnKOdWI2QNhE3AB0SvAWrD0PYanzG65thsbCeB/uLj+XSwg==",
       "path": "nuget.frameworks/3.5.0",
       "hashPath": "nuget.frameworks.3.5.0.nupkg.sha512"
+    },
+    "rabbitmq.client/4.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kRSynszpUNVgklJWK211sWMPtTUufexmgXtOD90hsqgT9YLACL/cb3+SPbb6sy8MwweNt71TkQFjOVjX3B0NOQ==",
+      "path": "rabbitmq.client/4.1.0",
+      "hashPath": "rabbitmq.client.4.1.0.nupkg.sha512"
+    },
+    "rawrabbit/1.10.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vEMGJRSRPLEeyfeJAFIRmQmcMz5aSdaKBai+BR7JunPim98JjpFK3YysVUo+/9PhGlDX9yTR0hn8Z5wlRX612A==",
+      "path": "rawrabbit/1.10.3",
+      "hashPath": "rawrabbit.1.10.3.nupkg.sha512"
+    },
+    "rawrabbit.vnext/1.10.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9T0+961GcfkZ4DF3FqzvTbG2aqob//1eTnDxkoaHQR28ZnnxSE5okrX/8VFBWe2Klh5wy0unA+kPQWpIq6eIew==",
+      "path": "rawrabbit.vnext/1.10.3",
+      "hashPath": "rawrabbit.vnext.1.10.3.nupkg.sha512"
     },
     "remotion.linq/2.1.1": {
       "type": "package",

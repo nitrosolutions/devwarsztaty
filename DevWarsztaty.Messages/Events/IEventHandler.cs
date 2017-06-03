@@ -7,6 +7,6 @@ namespace DevWarsztaty.Messages.Events
 {
 	public interface IEventHandler<in T> where T : IEvent
 	{
-		Task HandlerAsync(T @event);
+		Task HandleAsync(T @event);
 	}
 }

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DevWarsztaty.Messages.Events
 {
-	public class CreateRecordFailed : IEvent
+    public class CreateRecordFailed : IEvent
 	{
 		public string Key { get; }
 
