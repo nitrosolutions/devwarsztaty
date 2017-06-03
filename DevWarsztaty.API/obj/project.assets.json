@@ -2,6 +2,18 @@
   "version": 2,
   "targets": {
     ".NETCoreApp,Version=v1.1": {
+      "DevWarsztaty.Messages/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.App": "1.1.2"
+        },
+        "compile": {
+          "lib/netcoreapp1.1/DevWarsztaty.Messages.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp1.1/DevWarsztaty.Messages.dll": {}
+        }
+      },
       "Libuv/1.9.1": {
         "type": "package",
         "dependencies": {
@@ -4194,17 +4206,20 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
-      },
-      "DevWarsztaty.Messages/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v1.1",
-        "dependencies": {
-          "Microsoft.NETCore.App": "1.1.2"
-        }
       }
     }
   },
   "libraries": {
+    "DevWarsztaty.Messages/1.0.0": {
+      "sha512": "ZsFxeWrFMTwWCq5wKrbDBT926mE1ou4LFk9n3yhILfh0SdmDETesHSNamMneKWbOBEpf8ld67Wcn+QHESHVIxQ==",
+      "type": "package",
+      "path": "devwarsztaty.messages/1.0.0",
+      "files": [
+        "devwarsztaty.messages.1.0.0.nupkg.sha512",
+        "devwarsztaty.messages.nuspec",
+        "lib/netcoreapp1.1/DevWarsztaty.Messages.dll"
+      ]
+    },
     "Libuv/1.9.1": {
       "sha512": "uqX2Frwf9PW8MaY7PRNY6HM5BpW1D8oj1EdqzrmbEFD5nH63Yat3aEjN/tws6Tw6Fk7LwmLBvtUh32tTeTaHiA==",
       "type": "package",
@@ -10800,11 +10815,6 @@
         "system.xml.xpath.xdocument.4.0.1.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
-    },
-    "DevWarsztaty.Messages/1.0.0": {
-      "type": "project",
-      "path": "../DevWarsztaty.Messages/DevWarsztaty.Messages.csproj",
-      "msbuildProject": "../DevWarsztaty.Messages/DevWarsztaty.Messages.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -10840,11 +10850,7 @@
       ],
       "frameworks": {
         "netcoreapp1.1": {
-          "projectReferences": {
-            "D:\\dotnet\\devwarsztaty\\DevWarsztaty.Messages\\DevWarsztaty.Messages.csproj": {
-              "projectPath": "D:\\dotnet\\devwarsztaty\\DevWarsztaty.Messages\\DevWarsztaty.Messages.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       }
     },
@@ -10862,6 +10868,10 @@
           "Microsoft.Extensions.Logging.Debug": {
             "target": "Package",
             "version": "1.1.2"
+          },
+          "DevWarsztaty.Messages": {
+            "target": "Package",
+            "version": "1.0.0"
           },
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",

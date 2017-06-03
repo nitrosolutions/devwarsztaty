@@ -5,11 +5,14 @@ VisualStudioVersion = 15.0.26430.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevWarsztaty.API", "DevWarsztaty.API\DevWarsztaty.API.csproj", "{6C512753-929B-4512-8D3A-017CD18D96C3}"
 EndProject
-Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{B8234653-1C23-4B12-8E36-D4164E4E8031}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevWarsztaty.Service", "DevWarsztaty.Service\DevWarsztaty.Service.csproj", "{D30D1AC9-6013-474B-BCD3-5EAAE71308FF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevWarsztaty.Messages", "DevWarsztaty.Messages\DevWarsztaty.Messages.csproj", "{72FA72B7-0D11-4684-B9E1-DE33B65A2AB1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DBBB95CD-4E38-4602-A608-293B957F9D62}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,10 +24,6 @@ Global
 		{6C512753-929B-4512-8D3A-017CD18D96C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C512753-929B-4512-8D3A-017CD18D96C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C512753-929B-4512-8D3A-017CD18D96C3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B8234653-1C23-4B12-8E36-D4164E4E8031}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B8234653-1C23-4B12-8E36-D4164E4E8031}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B8234653-1C23-4B12-8E36-D4164E4E8031}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B8234653-1C23-4B12-8E36-D4164E4E8031}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D30D1AC9-6013-474B-BCD3-5EAAE71308FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D30D1AC9-6013-474B-BCD3-5EAAE71308FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D30D1AC9-6013-474B-BCD3-5EAAE71308FF}.Release|Any CPU.ActiveCfg = Release|Any CPU

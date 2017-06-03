@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v1.1",
-    "signature": "48ee5ae402bbbb1d10ef04aec08f4056746b67c4"
+    "signature": "c273d558ad3a994714857c396fbecc65c395d8b6"
   },
   "compilationOptions": {
     "defines": [
@@ -42,6 +42,17 @@
         },
         "compile": {
           "DevWarsztaty.API.dll": {}
+        }
+      },
+      "devwarsztaty.messages/1.0.0": {
+        "dependencies": {
+          "Microsoft.NETCore.App": "1.1.2"
+        },
+        "runtime": {
+          "lib/netcoreapp1.1/DevWarsztaty.Messages.dll": {}
+        },
+        "compile": {
+          "lib/netcoreapp1.1/DevWarsztaty.Messages.dll": {}
         }
       },
       "microsoft.applicationinsights/2.2.0": {
@@ -1834,17 +1845,6 @@
           "lib/netstandard1.0/System.Text.Encodings.Web.dll": {}
         }
       },
-      "devwarsztaty.messages/1.0.0": {
-        "dependencies": {
-          "Microsoft.NETCore.App": "1.1.2"
-        },
-        "runtime": {
-          "DevWarsztaty.Messages.dll": {}
-        },
-        "compile": {
-          "DevWarsztaty.Messages.dll": {}
-        }
-      },
       "libuv/1.9.1": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0"
@@ -3506,6 +3506,13 @@
       "serviceable": false,
       "sha512": ""
     },
+    "devwarsztaty.messages/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZsFxeWrFMTwWCq5wKrbDBT926mE1ou4LFk9n3yhILfh0SdmDETesHSNamMneKWbOBEpf8ld67Wcn+QHESHVIxQ==",
+      "path": "devwarsztaty.messages/1.0.0",
+      "hashPath": "devwarsztaty.messages.1.0.0.nupkg.sha512"
+    },
     "microsoft.applicationinsights/2.2.0": {
       "type": "package",
       "serviceable": true,
@@ -4317,11 +4324,6 @@
       "sha512": "sha512-tcfPv+q/nK+5EsAxCLauIOd0kL+lZsXQ4lPKRnh8ex6O1Rm8WAN3LtF2GDFHyD0glSmUpIrgTnLhHCkMAKo3Ug==",
       "path": "system.text.encodings.web/4.3.1",
       "hashPath": "system.text.encodings.web.4.3.1.nupkg.sha512"
-    },
-    "devwarsztaty.messages/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
     },
     "libuv/1.9.1": {
       "type": "package",

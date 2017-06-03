@@ -1,14 +1,28 @@
 version: '2'
 
 services:
-  devwarsztaty.api:
-    image: devwarsztaty.api
-    build:
-      context: ./DevWarsztaty.API
-      dockerfile: Dockerfile
 
-  devwarsztaty.service:
-    image: devwarsztaty.service
-    build:
-      context: ./../DevWarsztaty.Service
-      dockerfile: Dockerfile
+  start_dependencies:
+      image: dadarek/wait-for-dependencies
+      depends_on:
+        - rabbitmq    
+      command: rabbitmq:5672
+
+  rabbitmq:
+      image: rabbitmq
+      ports:
+        - '5672:5672'
+
+  api:
+      build: ./DevWarsztaty.API
+      links: 
+        - rabbitmq
+      ports:
+        - '5000:5000'
+
+  devservice:
+      build: ./DevWarsztaty.Service
+      links: 
+        - rabbitmq
+      ports:
+        - '5050:5050'

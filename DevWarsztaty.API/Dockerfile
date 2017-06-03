@@ -1,6 +1,12 @@
-FROM microsoft/aspnetcore:1.1
-ARG source
+FROM microsoft/dotnet:latest
+COPY . /app
 WORKDIR /app
-EXPOSE 80
-COPY ${source:-obj/Docker/publish} .
-ENTRYPOINT ["dotnet", "DevWarsztaty.API.dll"]
+
+RUN ["dotnet", "restore", "--source", "https://api.nuget.org/v3/index.json", "--source", "https://www.myget.org/F/devwarsztaty/api/v3/index.json", "--no-cache"]
+
+RUN ["dotnet", "build"]
+
+EXPOSE 5000/tcp
+ENV ASPNETCORE_URLS http://*:5000
+
+ENTRYPOINT ["dotnet", "run"]
