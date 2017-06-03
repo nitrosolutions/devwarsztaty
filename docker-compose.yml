@@ -6,3 +6,9 @@ services:
     build:
       context: ./DevWarsztaty.API
       dockerfile: Dockerfile
+
+  devwarsztaty.service:
+    image: devwarsztaty.service
+    build:
+      context: ./../DevWarsztaty.Service
+      dockerfile: Dockerfile
