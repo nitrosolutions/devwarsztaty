@@ -24,7 +24,6 @@ namespace DevWarsztaty.API
 				.AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
 				.AddEnvironmentVariables();
 			Configuration = builder.Build();
-
 		}
 
 		public IConfigurationRoot Configuration { get; }
@@ -52,8 +51,6 @@ namespace DevWarsztaty.API
 			{
 				//routes.MapRoute("default", "{controller=Home}/{action=Index}/{id?}");
 			});
-
-
 		}
 
 		private void ConfigureRabbitMq(IServiceCollection services)
@@ -69,7 +66,6 @@ namespace DevWarsztaty.API
 			services.AddSingleton<IBusClient>(client);
 
 			services.AddScoped<IEventHandler<RecordCreated>, RecordCreatedHandler>();
-
 			services.AddScoped<IEventHandler<CreateRecordFailed>, CreateRecordFailedHandler>();
 		}
 
@@ -83,7 +79,6 @@ namespace DevWarsztaty.API
 			var client = app.ApplicationServices.GetService<IBusClient>();
 
 			client.SubscribeAsync<RecordCreated>((msg, ctx) => app.ApplicationServices.GetService<IEventHandler<RecordCreated>>().HandleAsync(msg));
-
 			client.SubscribeAsync<CreateRecordFailed>((msg, ctx) => app.ApplicationServices.GetService<IEventHandler<CreateRecordFailed>>().HandleAsync(msg));
 		}
 	}

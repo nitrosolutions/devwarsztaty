@@ -63,6 +63,7 @@ namespace DevWarsztaty.Service
 		private void ConfigureHandlers(IApplicationBuilder app)
 		{
 			var client = app.ApplicationServices.GetService<IBusClient>();
+
 			client.SubscribeAsync<CreateRecord>((msg, ctx) => app.ApplicationServices.GetService<ICommandHandler<CreateRecord>>().HandleAsync(msg));
 		}
 	}
