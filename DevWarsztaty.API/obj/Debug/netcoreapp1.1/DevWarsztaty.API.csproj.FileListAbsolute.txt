@@ -1,0 +1,9 @@
+D:\dotnet\devwarsztaty\DevWarsztaty.API\bin\Debug\netcoreapp1.1\DevWarsztaty.API.deps.json
+D:\dotnet\devwarsztaty\DevWarsztaty.API\bin\Debug\netcoreapp1.1\DevWarsztaty.API.runtimeconfig.json
+D:\dotnet\devwarsztaty\DevWarsztaty.API\bin\Debug\netcoreapp1.1\DevWarsztaty.API.runtimeconfig.dev.json
+D:\dotnet\devwarsztaty\DevWarsztaty.API\bin\Debug\netcoreapp1.1\DevWarsztaty.API.dll
+D:\dotnet\devwarsztaty\DevWarsztaty.API\bin\Debug\netcoreapp1.1\DevWarsztaty.API.pdb
+D:\dotnet\devwarsztaty\DevWarsztaty.API\obj\Debug\netcoreapp1.1\DevWarsztaty.API.csprojResolveAssemblyReference.cache
+D:\dotnet\devwarsztaty\DevWarsztaty.API\obj\Debug\netcoreapp1.1\DevWarsztaty.API.AssemblyInfo.cs
+D:\dotnet\devwarsztaty\DevWarsztaty.API\obj\Debug\netcoreapp1.1\DevWarsztaty.API.dll
+D:\dotnet\devwarsztaty\DevWarsztaty.API\obj\Debug\netcoreapp1.1\DevWarsztaty.API.pdb

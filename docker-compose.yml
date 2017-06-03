@@ -1,0 +1,8 @@
+version: '2'
+
+services:
+  devwarsztaty.api:
+    image: devwarsztaty.api
+    build:
+      context: ./DevWarsztaty.API
+      dockerfile: Dockerfile
